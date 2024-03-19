@@ -1,0 +1,862 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    font-family: "iranyekanwebregular", Arial, Helvetica, sans-serif;
+
+}
+
+header {
+
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin: auto;
+    padding: 21px 0 7px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #eff0f1;
+
+}
+
+.logo {
+
+    margin: 11px 28px;
+}
+
+.header-ul {
+
+    display: flex;
+    list-style: none;
+
+}
+
+.header-ul li {
+
+    font-size: 14px;
+    margin: 0 15px;
+
+}
+
+.more-menu {
+
+    display: flex;
+
+}
+
+.header-ul li a {
+
+    color: #303030;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.header-ul li img {
+
+    width: 8px;
+    margin-right: 8px;
+
+}
+
+.header-ul>li:last-child a {
+
+    margin-right: 20px;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.6);
+    padding: 10px 27px;
+    border-radius: 20px;
+    font-family: YekanBakhBold;
+
+}
+
+.header-ul>li:last-child a:hover {
+
+    background-color: #fbf6d9;
+
+}
+
+.hamburger-icon {
+
+    display: none;
+    width: 27px;
+}
+
+.cross-icon {
+
+    text-align: left;
+    padding: 25px 0;
+    width: 100%;
+
+}
+
+.cross-icon img {
+
+    margin-left: 30px;
+    width: 20px;
+
+}
+
+.hamburger-menu-items {
+
+    padding: 10px 30px;
+
+}
+
+.hamburger-menu-items ul {
+
+    list-style: none;
+
+}
+
+.hamburger-menu-items a {
+
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 3px 0px;
+
+}
+
+.hamburger-menu-items div {
+
+    width: 90%;
+    height: 1px;
+    background-color: #dfe1e4;
+    margin: 8px;
+
+}
+
+.hamburger-menu {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+    font-family: iranyekanwebmedium;
+    transform: translateY(-100%);
+
+}
+
+.more-item {
+
+    display: flex;
+    background-color: #eee;
+    padding: 20px 50px;
+    align-items: center;
+
+}
+
+.more-item img {
+
+    width: 15px;
+    margin-right: 5px;
+
+}
+
+.more-item a {
+
+    text-decoration: none;
+    color: #28457b;
+    font-size: 0.85rem;
+
+}
+
+.show-hamburger-menu {
+
+    animation: fadeInDown 0.25s forwards;
+
+}
+
+@keyframes fadeInDown {
+
+    0% {
+
+        opacity: 0;
+        transform: translateY(-100%);
+
+    }
+
+    100% {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+#show-more-menu {
+
+    position: relative;
+
+}
+
+#show-more-menu ul {
+
+    position: absolute;
+    top: 0;
+    left: -35px;
+    background-color: white;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 23px;
+    list-style: none;
+    width: 140px;
+    display: none;
+
+}
+
+#show-more-menu li {
+
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    color: black;
+
+}
+
+#show-more-menu li:hover {
+
+
+    background-color: rgba(232, 239, 254, 0.6);
+
+}
+
+#show-product-menu {
+
+    position: relative;
+
+}
+
+.product-menu {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -135px;
+    justify-content: flex-start;
+    background-color: white;
+    border-top: 5px solid #f8e88b;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 23px;
+    width: 372px;
+
+}
+
+.product-menu a p:first-child {
+
+    color: black;
+    font-size: 0.95rem;
+
+}
+
+.product-menu a p:last-child {
+
+    color: black;
+    font-size: 0.7rem;
+
+}
+
+.product-menu a {
+
+    margin: 10px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.product-menu a:hover {
+
+    background-color: rgba(232, 239, 254, 0.6);
+
+}
+
+.banner {
+
+    width: 1050px;
+    padding: 124px 60px 80px;
+    display: flex;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-image: linear-gradient(135deg, #21254e, #2b4a83);
+    justify-content: space-between;
+
+}
+
+.banner-text {
+
+    color: white;
+
+}
+
+.banner-text h3 {
+
+    font-family: YekanBakhHeavy;
+    font-size: 2rem;
+
+}
+
+.banner-text p {
+
+    line-height: 2.5rem;
+    margin: 25px 0;
+    font-size: 1.15rem;
+
+}
+
+.banner-image img {
+
+    width: 500px;
+
+}
+
+.banner-button {
+
+    margin-top: 60px;
+
+}
+
+.register {
+
+
+    font-family: YekanBakhBold;
+    padding: 6px 14px;
+    color: black;
+    font-size: 1rem;
+    background-color: #ffd900;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+
+}
+
+.login {
+
+    font-family: YekanBakhBold;
+    padding: 6px 14px;
+    color: white;
+    font-size: 1rem;
+    background-color: #435a8a;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+
+}
+
+.go-down {
+
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.go-down div {
+
+    top: 300px;
+    background-image: url(../images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+    position: relative;
+    top: -59px;
+
+}
+
+.go-down img {
+
+    width: 15px;
+    position: relative;
+    top: -117px;
+
+}
+
+@keyframes showUp {
+
+    0% {
+
+        opacity: 0;
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+.online-payment {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: auto;
+    width: 1170px;
+
+}
+
+.section-image {
+
+    width: 450px;
+    height: 480px;
+
+}
+
+.section-text {
+
+    margin: 30px 0;
+    width: 530px;
+
+}
+
+.section-text h2 {
+
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family: YekanBakhMedium;
+    color: #747480;
+    margin: 20px 0 5px;
+
+}
+
+.section-text h3 {
+
+    font-family: YekanBakhHeavy;
+    margin-top: 20px;
+    color: #303030;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 5px 0 10px;
+
+}
+
+.section-text p {
+
+    margin-top: 16px;
+    line-height: 40px;
+    text-align: justify;
+    padding-bottom: 20px;
+    font-family: YekanBakhMedium;
+    border-bottom: 1px solid #dfe1e4;
+
+}
+
+.section-links {
+
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.section-links .first-button {
+
+    padding: 8px 12px;
+    background-color: #ffd900;
+    font-family: iranyekanwebmedium;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 14px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.section-links .second-button {
+
+    font-family: iranyekanwebmedium;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 6px 14px;
+    background-color: rgba(232, 239, 254, .6);
+    color: #28457b;
+    display: flex;
+    align-items: center;
+
+}
+
+.section-links .second-button img {
+
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+
+}
+
+.social-image {
+
+    width: 680px;
+    height: 530px;
+    margin-left: -60px;
+
+}
+
+.attributes {
+
+    display: flex;
+    width: 1170px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.definition {
+
+
+    margin-left: 100px;
+
+}
+
+.items {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.items .first-item{
+
+    border-left: 1px solid #747480;
+   
+
+}
+
+.items .second-item{
+
+    border-bottom: 1px solid #747480;
+
+}
+
+.items .third-item{
+
+    border-top: 1px solid #747480;
+    
+    
+}
+
+.items .fourth-item{
+
+    border-right: 1px solid #747480;
+    
+
+}
+
+.item div {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.item img {
+
+    width: 60px;
+    height: 60px;
+
+}
+
+.item p {
+
+    padding: 0 0 30px 30px;
+    margin-top: 21px;
+    line-height: 36px;
+    font-family: YekanBakhMedium;
+    text-align: justify;
+    font-size: 1rem;
+
+
+}
+
+.item h3 {
+
+    font-family: YekanBakhBold;
+    font-size: 1.5rem;
+    margin-right: 25px;
+
+}
+
+.definition h3 {
+
+    font-family: YekanBakhBold;
+    font-size: 2rem;
+
+}
+
+.definition p {
+
+    margin-top: 48px;
+    line-height: 40px;
+    font-family: YekanBakhMedium;
+    text-align: justify;
+    font-size: 1rem;
+
+}
+
+@media (max-width:1200px) {
+
+    header {
+
+        width: 940px;
+
+    }
+
+    .banner {
+
+        width: 900px;
+        padding: 60px 40px 120px;
+
+    }
+
+    .banner-image img {
+
+        width: 430px;
+
+    }
+
+    .online-payment {
+
+        width: 940px;
+
+    }
+
+    .zarinplus,
+    .zarincard {
+
+        padding-left: 60px;
+
+    }
+
+    .payout {
+
+        padding-right: 60px;
+
+    }
+
+}
+
+@media (max-width:990px) {
+
+    header {
+
+        width: auto;
+        padding: 20px 60px;
+
+    }
+
+    .header-ul li:last-child {
+
+        display: none;
+    }
+
+    .logo {
+
+        margin: 0;
+
+    }
+
+    .header-ul li {
+
+        margin: 0 10px;
+
+    }
+
+    .banner {
+
+        width: auto;
+        padding: 40px 40px 85px;
+        margin-left: 35px;
+        margin-right: 35px;
+
+    }
+
+    .banner-image img {
+
+        display: none;
+
+    }
+
+    .banner-text {
+
+        text-align: center;
+        font-size: 1rem;
+
+    }
+
+    .banner-text p {
+
+        margin: 5px 0;
+
+    }
+
+    .banner-button {
+
+        margin-top: 40px;
+
+    }
+
+    .online-payment {
+
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .section-text {
+
+        width: 95%;
+
+    }
+
+    .social,
+    .section-payout {
+
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .online-payment .payout {
+
+        margin: 0 auto;
+        padding-right: 0;
+
+
+    }
+
+    .online-payment .social-image {
+
+        margin: 0 auto;
+
+    }
+
+    .online-payment .zarinplus,
+    .online-payment .zarincard {
+
+        margin: 0 auto;
+        padding-left: 0;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header-ul {
+
+        display: none;
+
+    }
+
+    .hamburger-icon {
+
+        display: block;
+
+    }
+
+    header {
+
+        width: auto;
+        padding: 10px 8px;
+
+    }
+
+    .banner {
+
+        margin-left: 8px;
+        margin-right: 8px;
+
+    }
+
+    .section-text {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .online-payment img {
+
+        width: 460px;
+        height: 480px;
+
+    }
+
+    .social-image {
+
+        margin: 0 auto;
+
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .banner {
+
+        padding: 80px 40px;
+
+    }
+
+    .banner-text h3 {
+
+        font-size: 1.2rem;
+        text-align: right;
+
+    }
+
+    .banner-text p {
+
+        text-align: justify;
+
+    }
+
+    .online-payment .section-image {
+
+        display: none;
+
+    }
+
+    .section-text {
+
+        width: 80%;
+        padding: 0 10px;
+
+    }
+
+    .section-text h3 {
+
+        font-size: 1.5rem;
+
+    }
+
+}
