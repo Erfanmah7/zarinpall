@@ -629,6 +629,54 @@ header {
 
 }
 
+.start-box {
+
+    width: 1170px;
+    height: 220px;
+    margin: auto;
+    margin-top: 59px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.start-box h4 {
+
+    font-family: YekanBakhHeavy;
+    font-size: 1.7rem;
+
+}
+
+.start-box p {
+
+    font-family: YekanBakhMedium;
+    font-size: 1.4rem;
+    color: #747480;
+    margin-top: 10px;
+
+}
+
+.start-box a {
+
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: iranyekanwebmedium;
+    font-size: 0.9rem;
+    min-height: 28px;
+    line-height: 28px;
+    padding: 4px 14px;
+    background-color: #ffd900;
+    color: #000;
+    border-radius: 10px;
+
+
+}
+
 @media (max-width:1200px) {
 
     header {
@@ -712,6 +760,13 @@ header {
         padding: 18px 0 20px 50px;
 
     }
+
+    .start-box {
+
+        width: 940px;
+
+    }
+
 
 }
 
@@ -826,6 +881,13 @@ header {
 
     }
 
+    .start-box {
+
+        margin: 0 38px;
+        width: calc(100% - 76px);
+
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -903,6 +965,13 @@ header {
 
     }
 
+    .start-box {
+
+        margin: 0 8px;
+        width: calc(100% - 16px);
+
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -957,6 +1026,27 @@ header {
 
 
         padding: 18px 0;
+    }
+
+    .start-box {
+
+        height: 180p;
+
+    }
+
+
+    .start-box h4 {
+
+
+        font-size: 1.2rem;
+
+    }
+
+    .start-box p {
+
+
+        font-size: 1rem;
+
     }
 
 }
