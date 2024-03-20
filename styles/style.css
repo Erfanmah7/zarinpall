@@ -542,6 +542,24 @@ header {
 
 }
 
+.items h4{
+
+font-size: 1.5rem;
+font-family: YekanBakhHeavy;
+margin-right: 20px;
+
+}
+
+.items p{
+
+
+margin: 20px 0 20px 10px;
+font-size: 1rem;
+font-family: YekanBakhMedium;
+color: #303030;
+
+}
+
 .items .first-item{
 
     border-left: 1px solid #747480;
