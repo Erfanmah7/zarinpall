@@ -677,6 +677,58 @@ header {
 
 }
 
+.support {
+
+
+    width: 1110px;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fbf6f1;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+
+}
+
+.support-number {
+
+    font-family: YekanBakhHeavy;
+    font-size: 1.5rem;
+
+}
+
+#line {
+
+    margin: 0 15px;
+
+}
+
+#phone-number {
+
+    color: #21254e;
+
+}
+
+.support-request a {
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: YekanBakhBold;
+    color: #21254e;
+    font-size: 1.5rem;
+
+}
+
+.support-request a img {
+
+    width: 20px;
+    margin-right: 10px;
+
+}
+
 @media (max-width:1200px) {
 
     header {
@@ -764,6 +816,12 @@ header {
     .start-box {
 
         width: 940px;
+
+    }
+
+    .support {
+
+        width: 880px;
 
     }
 
@@ -888,6 +946,19 @@ header {
 
     }
 
+    .support {
+
+        width: calc(100% - 120px);
+
+    }
+
+    .support-request a,
+    .support-number {
+
+        font-size: 1.2rem;
+
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -972,6 +1043,25 @@ header {
 
     }
 
+    .support {
+
+
+        flex-direction: column;
+        align-items: flex-start;
+        background: none;
+
+    }
+
+    .support-request
+     {
+
+        background-color: #fbf6f1;
+        padding: 5px 20px;
+        border-radius: 35px;
+        margin-top: 20px;
+        
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -1024,7 +1114,6 @@ header {
 
     .items .item {
 
-
         padding: 18px 0;
     }
 
@@ -1046,6 +1135,28 @@ header {
 
 
         font-size: 1rem;
+
+    }
+
+    .support {
+
+
+        width: calc(100% - 60px);
+        padding: 0;
+        margin: 50px 30px;
+
+    }
+
+    
+    .support-number {
+
+        font-size: 0.95rem;
+
+    }
+
+    .support-request a{
+
+        font-size: 0.95rem;
 
     }
 
